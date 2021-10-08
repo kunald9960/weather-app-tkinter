@@ -32,12 +32,12 @@ def weather1(city):
 
 def open_img(icon):
     size=int(frame_two.winfo_height()*0.6)
-    img=ImageTk.PhotoImage(Image.open('---IMG PATH---'+icon+'.png').resize((size,size)))
+    img=ImageTk.PhotoImage(Image.open('--IMG PATH--'+icon+'.png').resize((size,size)))
     weathericon.delete('all')
     weathericon.create_image(0,0,anchor='nw',image=img)
     weathericon.image=img
 
-img=Image.open("---IMG PATH---")
+img=Image.open("--IMG PATH--")
 img=img.resize((600,420))
 img_photo=ImageTk.PhotoImage(img)
 
